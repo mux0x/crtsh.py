@@ -20,7 +20,7 @@ else:
 
 f = open(outFile, "a")
 try:
-    response = requests.get('https://crt.sh/?q=careem.com&output=json')
+    response = requests.get('https://crt.sh/?q=' + domain + '.com&output=json')
 except Exception as e:
     print("ERROR OCCURED DURING REQUESTING " + e)
 json = response.json()
